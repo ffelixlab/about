@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>FELIXLAB</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      height: 100vh;
+      background: url('background.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Dunkler Overlay für bessere Lesbarkeit */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    h1, a {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 1s ease-out forwards;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 3em;
+      letter-spacing: 2px;
+      margin-bottom: 2rem;
+      animation-delay: 0.2s;
+    }
+
+    a {
+      display: block;
+      margin: 0.5rem 0;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2em;
+      transition: color 0.3s ease;
+    }
+
+    a:nth-of-type(1) { animation-delay: 0.4s; }
+    a:nth-of-type(2) { animation-delay: 0.6s; }
+    a:nth-of-type(3) { animation-delay: 0.8s; }
+
+    a:hover {
+      color: #ccc;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>FELIXLAB</h1>
+  <a href="https://discord.gg/naJtCpBjXV" target="_blank">Discord</a>
+  <a href="https://www.youtube.com/@FelixGOTYシ/featured" target="_blank">YouTube</a>
+  <a href="https://www.twitch.tv/felixlab_" target="_blank">Twitch</a>
+</body>
+</html>
